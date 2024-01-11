@@ -137,6 +137,7 @@ height: 60px;
   /* hero section  */
 .hero{
     height: 100vh; 
+    width: 100vw;
     position: relative;
     background-color: var(--bg-color);
      background:url(images/hero-img.png) center/cover fixed;
@@ -155,6 +156,7 @@ height: 60px;
 .hero-container{
     
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -169,14 +171,13 @@ height: 60px;
  height: 450px;
  width: 600px;
  position: relative;
-    
-
 }
 .hero-img > img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit:fill;
     object-position: center;
+    
 }
 .hero-text{
     display: flex;
@@ -237,6 +238,28 @@ height: 60px;
         align-items: center;  
     }
 
+    /* hero section  */
+ 
+    .hero-container{
+        padding-top: 3rem;
+        overflow: hidden;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        /* width: 500px; */
+       
+       
+    }
+    .hero-text > h2{
+        font-size: 2rem;
+        font-weight:600;
+        color: var(--main-color);
+        
+    }
+    
+    
 }
 
 

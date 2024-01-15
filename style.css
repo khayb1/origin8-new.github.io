@@ -15,6 +15,8 @@
   --second-text: #ffffff;
   --second-color: #ffeeca;
   --bg-color: #f3f2f2;
+  --h2-size:  3rem;
+  --h2-weight: 1000;
 }
 /* navbar  */
 .navbar {
@@ -110,8 +112,7 @@
 
 /* hero section  */
 .hero {
-  height: 100vh;
-  /* width: 100vw; */
+  /* height: 100vh; */
   position: relative;
   background-color: var(--bg-color);
   background: url(images/hero-img.png) center/cover fixed;
@@ -167,7 +168,7 @@
   color: var(--second-text);
 }
 
-.hero-btn {
+.btn {
   width: fit-content;
   padding: 5px 30px;
   margin: 0;
@@ -176,7 +177,7 @@
   background: var(--main-color);
   transition: 1s ease;
 }
-.hero-btn:hover {
+.btn:hover {
   background-color: var(--main-color);
   border: 3px solid var(--second-text);
   transform: skewX(-20deg);
@@ -233,7 +234,7 @@
 }
 /* download section  */
 .download-section {
-  background-color: var(--bg-color);
+  background-color: var(--second-text);
   margin: 0;
   padding-bottom: 5%;
 }
@@ -249,8 +250,8 @@
 .download-section h2 {
   text-align: center;
   padding: 30px 30px;
-  font-size: 3rem;
-  font-weight: 1000;
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
   color: var(--text-color);
 
 }
@@ -300,7 +301,6 @@
 .marketing-section {
     background: url(images/2021.jpg)   center/cover;
     position: relative;
-    /* margin: 0; */
     }
     .marketing-section::before, .marketing-section-2::before{
         content:'';
@@ -369,6 +369,212 @@
     .marketing-container-2 a:nth-child(2){
         margin:0 0.7rem 2rem 0;
     }
+    /* services */
+.services{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.services h2{
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+}
+.services-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 10%;
+  text-align: center;
+  row-gap: 2rem;
+}
+.services-items{
+  padding:5px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 280px;
+  min-height: 240px;
+  border: 1px solid #888;    
+}
+.services-items a:nth-child(1) img{
+  max-width: 120px;
+  max-height: 120px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+.services-items a:nth-child(1):hover{
+  opacity: 0.5;
+}
+.services-items a:nth-child(2){
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+ text-decoration: none;
+ color: var(--text-color);
+ transition: 1s ease;
+}
+.services-items a:nth-child(2):hover{
+  color: var(--main-color);
+  transform:scale(1.1);
+}
+.hide{
+  display: flex;
+  flex-direction: column;
+}
+/* works section  */
+
+.works{
+  padding:3% 0;
+  text-align: center;
+  background-color: var(--main-color);
+}
+.works h2{
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  margin-bottom: 50px ;
+}
+.carousel{
+  margin:0 auto ;
+  padding: 0; 
+ overflow: hidden;
+ width: 25vw;
+ position: relative;
+}
+.carousel-item{ 
+  display: block;
+  margin: 0 auto;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.carousel-item img{
+  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    object-position: center;
+}
+.works >h3{
+  padding: 2rem 0;
+  font-weight: 600;
+}
+.overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 246, 246, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 1s ease;
+}
+.overlay > p{
+ color:var(--text-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px;
+}
+.overlay:hover{
+  opacity: 1;
+}
+/* clients section  */
+.clients{
+  padding-top: 3%;
+  text-align: center;
+background-color: var(--bg-color);
+ 
+}
+/* .client-container */
+.clients{
+  padding-bottom: 1rem;
+}
+.clients > h2{
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+}  
+.client-container, .new-client{
+  position: relative;
+  margin: 5% 10% 1px 10%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--second-text);
+
+}
+.client-container::before, .new-client::before{
+  position: absolute;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100px;
+  height: 100%;
+  content: '';
+}
+.client-container::after, .new-client::after{
+  position: absolute;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  right: 0;
+  z-index: 2;
+  width: 100px;
+  height: 100%;
+  content: '';
+}
+.client-wrapper{
+  display: inline-block;
+  animation: 150s scroll infinite linear;
+ }
+.client-wrapper img,   .new-client-wrapper img{
+  height: 200px;
+  max-width: 300px;
+  margin:0 40px;
+ 
+}
+.client-container:hover .client-wrapper, .new-client:hover .new-client-wrapper{
+  animation-play-state: paused;
+}
+
+@keyframes scroll{
+  from{
+   transform: translate(0);
+  }
+  to{
+   transform: translate(-100%);
+  }
+   
+ }
+.new-client{
+position: relative;
+margin: 0 10%;
+overflow: hidden;
+white-space: nowrap;
+background-color: var(--second-text);
+}
+.new-client-wrapper{
+    display: inline-block;
+    animation: 100s scrolls infinite linear;
+    }
+    
+    @keyframes scrolls{
+      from{
+       transform: translate(-100%);
+      }
+      to{
+       transform: translate(0);
+      }
+       
+     }
 
 /* for smaller screens  */
 @media (max-width: 900px) {
@@ -420,11 +626,51 @@
   .about-us-body{
     flex-wrap: wrap;
 }
-  /* }marketing section  */
+  /* marketing section  */
   .marketing-container, .marketing-container-2{
     margin: 10px;
 }
 .marketing-container-2 button{
 margin:0 auto 0 0 ; ;
 }
+
+/* .services section  */
+.services-content{
+  margin: 3%;
+}
+.services-items{
+  width: 180px;
+}
+.services-items a:nth-child(1) img{
+  max-width: 80px;
+  max-height: 80px;
+  object-position: center;
+  object-fit: cover;
+  padding: 5px;
+}
+/* work section   */
+.carousel{
+  margin:0 auto ;
+  padding: 0; 
+ overflow: hidden;
+ width: 35vw;
+ position: relative;
+}
+.carousel-item{ 
+  margin: auto;
+  object-fit: contain;
+  object-position:bottom;
+  transition: all .5s ease;
+
+}
+
+}
+/* moblie screen  */
+@media (max-width:450px){
+  .services-items{
+    padding:10px ;
+    width: 180px;
+    height: 120px;
+    border: 1px solid #888;    
+  } 
 }

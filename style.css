@@ -206,7 +206,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
-    /* flex-wrap: wrap; */
+
 }
 .about-us-img{
     flex-grow: 1;
@@ -245,7 +245,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 .download-section h2 {
   text-align: center;
@@ -253,10 +252,7 @@
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
   color: var(--text-color);
-
 }
-
-
 .card-holder {
   margin: 20px;
   display: flex;
@@ -264,7 +260,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .card {
   border-radius: 43px;
   display: flex;
@@ -400,7 +395,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  width: 280px;
+  min-width: 280px;
   min-height: 240px;
   border: 1px solid #888;    
 }
@@ -461,10 +456,7 @@
     object-fit:fill;
     object-position: center;
 }
-.works >h3{
-  padding: 2rem 0;
-  font-weight: 600;
-}
+
 .overlay{
   position: absolute;
   top: 50%;
@@ -578,6 +570,9 @@ background-color: var(--second-text);
 
 /* for smaller screens  */
 @media (max-width: 900px) {
+  .clients > h2, .works h2, .services h2, .download-section h2,.about-us-wrapper > h2{
+  font-size: 1.5rem;
+  }
   .navbar-nav {
     display: block;
   }
@@ -661,8 +656,20 @@ margin:0 auto 0 0 ; ;
   object-fit: contain;
   object-position:bottom;
   transition: all .5s ease;
-
 }
+  /* client section  */
+.client-wrapper img,   .new-client-wrapper img{
+    height: 100px;
+    max-width: 100px;
+    margin:0 40px;
+   
+  }
+  .client-container::before, .new-client::before{
+    width: 20px;   
+  }
+  .client-container::after, .new-client::after{
+    width: 20px;
+  }
 
 }
 /* moblie screen  */

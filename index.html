@@ -14,7 +14,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
+    <!-- animate css link  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- font-awsome link -->
     <link
       rel="stylesheet"
@@ -37,7 +41,7 @@
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand " href="#"
           ><img src="images/Logo-black.png" alt="logo" class="logo"
         /></a>
         <button
@@ -135,7 +139,7 @@
               </li>
               <li class="nav-item">
                 <i class="fa-solid fa-gears icon"></i>
-                <a class="nav-link" href="#"> Services</a>
+                <a class="nav-link" href="#services"> Services</a>
               </li>
               <li class="nav-item">
                 <i class="fa-solid fa-user icon"></i>
@@ -186,7 +190,7 @@
           <button class="hero-btn btn">EXPLORE</button>
         </div>
 
-        <div class="hero-img">
+        <div class="hero-img  hidden">
           <img src="images/slide.png" alt="" />
         </div>
       </div>
@@ -196,16 +200,16 @@
     <!-- About us section  -->
 
     <section class="about-us">
-      <div class="about-us-header">
+      <div class="about-us-header hidden">
       <h2>ABOUT US</h2>
       </div>
-      <h5>
+      <h5 class="hidden">
         Our purpose is serving the world by cutting through the noise that
         challenges the world to provide an unparallel insight from a
         Ghanaian context. The insights and quality services we provide help
         build trust and confidence in our clients.
       </h5>
-      <div class="about-us-wrapper">
+      <div class="about-us-wrapper hidden">
         <div class="about-us-text">
           <div class="AB-card">
             <div class="ABcard-img">
@@ -248,7 +252,7 @@
             </div>
        
         </div>
-          <div class="about-us-img">
+          <div class="about-us-img    hidden">
             <img src="images/about us.png" alt="" />
         </div>
       </div>
@@ -269,7 +273,7 @@
           Download free ebooks of our company's profile information Digital
           media portfolio and Event Management Portfolio.
         </h5>
-        <div class="card-holder">
+        <div class="card-holder    hidden">
           <div class="card hidden">
             <a href="files/Capability-Statement.pdf">
               <img src="images/MicrosoftTeams-image-5.png" alt=""
@@ -313,15 +317,16 @@
       </div>
     </section>
     <!-- marketing section ends here-->
+
     <!-- services section  -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services-header">
          <h2>SERVICES</h2>
       </div>
      
       <div class="services-content">
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper ">
             <a href="">
               <img src="images/Graphic-design-W.png" alt="" />
             </a>
@@ -329,7 +334,7 @@
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href="">
               <img src="images/Ideation-Copyrighting-W.png" alt=""
             /></a>
@@ -338,37 +343,37 @@
         </div>
 
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/Production-W.png" alt="" /></a>
             <a href="">Production</a>
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/Account-Management-W.png" alt="" /></a>
             <a href="">Account-based Marketing</a>
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/Media-W.png" alt="" /></a>
             <a href="">Media</a>
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/Market-Research-W.png" alt="" /></a>
             <a href="">Market Research</a>
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/Digital-Marketing-W.png" alt="" /></a>
             <a href="">Digital Marketing</a>
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href="">
               <img src="images/Brand-strategy-development-W.png" alt=""
             /></a>
@@ -376,13 +381,13 @@
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/Event-Organisation-W.png" alt="" /></a>
             <a href="">Event Organization, Management and Marketing</a>
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href="">
               <img src="images/Software-Development-W.png" alt=""
             /></a>
@@ -390,13 +395,13 @@
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/Public-Relations-W.png" alt="" /></a>
             <a href="">Public Relations</a>
           </div>
         </div>
         <div class="services-items">
-          <div class="hide">
+          <div class="hidden services-wrapper">
             <a href=""> <img src="images/CONSULTANCY-w.png" alt="" /></a>
             <a href="">Consultancy</a>
           </div>
@@ -429,10 +434,10 @@
     <!-- works section ends here  -->
 
     <!-- client section   -->
-    <section class="clients">
-      <h2>CLIENTS</h2>
-      <div class="client-container">
-        <div class="client-wrapper">
+    <section class="clients" >
+      <h2 class="hidden">CLIENTS</h2>
+      <div class="client-container hidden">
+        <div class="client-wrapper ">
           <img src="images/client images/client-06-uai-1042x781.jpg" alt="" />
           <img src="images/client images/egnl-uai-1042x781.jpg" alt="" />
           <img src="images/client images/fedex-uai-1042x781.jpg" alt="" />
@@ -490,7 +495,6 @@
             alt=""
           />
           <img src="images/client images/giz-uai-1042x781.jpg" alt="" />
-          <img src="images/client images/graphic-underline.png" alt="" />
           <img src="images/client images/Iparama-uai-1042x781.jpg" alt="" />
           <img src="images/client images/Jiji-uai-1042x781.jpg" alt="" />
           <img
@@ -530,7 +534,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.96913563081!2d-0.17390772552400555!3d5.571581433493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9bb64930b1cf%3A0xf017a4901fbb8a4e!2sOrigin8%20Limited!5e0!3m2!1sen!2sgh!4v1705410104394!5m2!1sen!2sgh"  style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="contact-container">
-        <div class="contact-form">
+        <div class="contact-form hidden">
 
           <div class="email">
             <i class="fa-solid fa-envelope fa-3x"></i>
@@ -552,7 +556,7 @@
         </div>
 
         </div>
-        <form class="form-wrapper">
+        <form class="form-wrapper hidden">
           <input class="name" type="text" name="name" placeholder="full name" required><br>
           <input class="gmail" type="email" name="email" placeholder="email" required><br>
           <input class="subject" type="text" name="subject" placeholder="subject" required><br>

@@ -725,6 +725,7 @@ background-color: var(--second-text);
      }
      .contact-info{
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       flex-grow: 1;
       column-gap: 2rem;
@@ -738,12 +739,12 @@ background-color: var(--second-text);
       text-align: center;
       justify-content: center;
       flex-grow: 1;
-      width: 300px;
+      width: 250px;
       padding: 2rem 0;
      }
      .call{
       flex-grow: 1;
-      width:300px ;
+      width:fit-content ;
      }
 
      .form-wrapper, .name, .gmail, .subject {

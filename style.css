@@ -873,14 +873,13 @@ background-color: var(--second-text);
     color: var(--main-color);
   }
   /* about us section  */
-  .about-us-header{
-    padding: 0 ;
-    
-}
-  .about-us-body{
+ .about-us-wrapper{
+    flex-direction: column-reverse;
+  }
+  .AB-card{
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-direction: column;
+  } 
   /* marketing section  */
   .marketing-container, .marketing-container-2{
     margin: 10px;

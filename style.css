@@ -172,19 +172,21 @@ body{
   color: var(--second-text);
 }
 
-.btn {
+.hero-btn {
   width: fit-content;
   padding: 5px 30px;
-  margin: 0;
-  border: 3px solid var(--second-text);
+  margin: 0; 
   border-radius: 5px;
   background: var(--main-color);
   transition: 1s ease;
+  box-shadow: 5px 5px  var(--second-text);
 }
-.btn:hover {
-  background-color: var(--main-color);
-  border: 3px solid var(--second-text);
-  transform: skewX(-20deg);
+.hero-btn a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+.hero-btn:hover {
+  box-shadow: 0 0  var(--text-color);
 }
 /* about us section  */
 .about-us{
@@ -498,6 +500,22 @@ max-width: 500px;
   font-weight: var(--h2-weight);
   margin-bottom: 50px ;
 }
+.work-btn {
+  width: fit-content;
+  padding: 5px 30px;
+  margin: 10px; 
+  border-radius: 5px;
+  background: var(--second-text);
+  transition: 1s ease;
+  box-shadow: 5px 5px  var(--text-color);
+}
+.work-btn a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+.work-btn:hover{
+  box-shadow: 0 0 var(--text-color);
+}
 .carousel{
   margin:0 auto ;
   padding: 0; 
@@ -760,11 +778,16 @@ background-color: var(--second-text);
       margin: auto;
       border-radius: 10px;
       background-color: var(--main-color);
-      box-shadow: 5px 5px 10px var(--second-text);
+      box-shadow: 5px 5px  var(--text-color);
+      transition: 1s ease;
+    }
+    .contact-btn:hover{
+      box-shadow: 0 0 var(--main-color) ;
     }
     /* footer */
     footer {
       background-color: var(--text-color);
+      position: relative;
     }
     .footer-container{
       height: fit-content;
@@ -824,6 +847,15 @@ background-color: var(--second-text);
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.to-top{
+  position: absolute;
+  right: 20px;
+  bottom:20px;
+}
+.to-top a{
+color:var(--main-color);
 }
 /* for smaller screens  */
 @media (max-width: 900px) {

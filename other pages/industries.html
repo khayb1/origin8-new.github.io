@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origin8/industries/</title>
+
+     <!-- favicon  -->
+     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+     <!-- bootstrap link  -->
+     <link
+       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+       rel="stylesheet"
+       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+       crossorigin="anonymous"
+     />
+     <!-- animate css link  -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+     <!-- font-awsome link -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+     <!-- swiper css  -->
+     <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+ 
+     <!-- custom css  -->
+     <link rel="stylesheet" href="industries.css" />
+</head>
+<body>
+  <!-- background animaiton -->
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
+     <!-- navbar  -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="/index.html"
+            ><img src="/images/Logo-black.png" alt="logo" class="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="/images/Logo-black.png" alt="" class="logo" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <i class="fa-solid fa-bookmark icon"></i>
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-auto-close="outside"
+                    href="/index.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropend">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        href="#"
+                        ><i class="fa-solid fa-building icon"></i>Company</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a href="#" class="dropdown-item"
+                            ><i
+                              class="fa-solid fa-clock-rotate-left d-icon icon"
+                            ></i
+                            >History</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="dropdown-item"
+                            ><i class="fa-solid fa-scale-balanced d-icon icon"></i
+                            >Core values</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="dropdown-item"
+                            ><i class="fa-solid fa-landmark-dome d-icon icon"></i
+                            >Policies</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="dropdown-item"
+                            ><i class="fa-solid fa-person icon"></i>People</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-briefcase icon"></i>Publication</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-image icon"></i>Releases</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-industry icon"></i>
+                  <a class="nav-link" aria-current="page" href="#">Industries</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-gears icon"></i>
+                  <a class="nav-link" href="services.html"> Services</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-user icon"></i>
+                  <a class="nav-link" href="works.html">Work</a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-phone icon"></i>
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 search"
+                  type="search"
+                  placeholder="Search"
+                  required
+                />
+                <button class=" search-btn" type="submit">
+                  <i class="fa-solid fa-magnifying-glass" aria-required="true"></i>
+                </button>
+              </form>
+              <a class="tarika" href="#"
+                ><img src="/images/TT-Icon-1.png" alt="" class="logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar ends here -->
+    <!-- hero section  -->
+    <section class="hero">
+      <div class="hero-img"> <h1> INDUSTRIES</h1><img src="/images/industries img/indsutry photo.jpg" alt=""></div>
+    </section>
+
+    <section class="industires">
+      <div class="industry-wrapper">
+        <div class="industry-item  ">
+          <p>Agric & Agro Processing</p>
+          <img src="/images/industries img/industries_img1.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>ICT & Fintech</p>
+          <img src="/images/industries img/industries_img2.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Oil & Gas</p>
+          <img src="/images/industries img/industries_img3.jpg" alt="" >
+        </div>
+        <div class="industry-item ">
+          <p>Recreation & Tourism</p>
+          <img src="/images/industries img/industries_img4.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Financial Services</p>
+          <img src="/images/industries img/industries_img5.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Property Development</p>
+          <img src="/images/industries img/industries_img6.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Manufacturing</p>
+          <img src="/images/industries img/industries_img7.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Transportion Logistics</p>
+          <img src="/images/industries img/industries_img8.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Health</p>
+          <img src="/images/industries img/industries_img9.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Education</p>
+          <img src="/images/industries img/industries_img10.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Government Institutions</p>
+          <img src="/images/industries img/industries_img11.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Multinationals & NGO's</p>
+          <img src="/images/industries img/industries_img12.jpg" alt="" >
+        </div> 
+        <div class="industry-item">
+          <p>Legal Firms</p>
+          <img src="/images/industries img/industries_img13.jpg" alt="" >
+        </div>
+        <div class="industry-item">
+          <p>Media</p>
+          <img src="/images/industries img/industries_img14.jpg" alt="" >
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- footer section -->
+    <footer>
+      <div class="footer-container">
+      <div class="quick-links ">
+        <h3>Quick Links</h3>
+        <div class="links">
+          <a href="industries.html">Industries</a>
+          <a href="services.html">Services</a>
+          <a href="works.html">Works</a>
+        </div>
+        
+        <div class="contact-icons ">
+          <a href=""><i class="fa-brands fa-facebook ico"></i>
+          </a>
+          <a href=""><i class="fa-brands fa-instagram ico"></i>
+          </a>
+          <a href=""><i class="fa-brands fa-linkedin ico"></i>
+          </a>
+        </div>
+           <P>© 2024. All rights reserved</P>
+      </div>
+    
+      </div>
+    </div>
+    <div class="to-top"><a href="#"><i class="fa-solid fa-circle-up fa-3x"></i></a></div>
+    </footer>
+
+      <!-- bootstrap js link  -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- swiper js  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- custom js  -->
+  <script src="/main.js"></script>
+</body>
+</html>
